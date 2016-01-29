@@ -7,6 +7,10 @@ import android.view.MenuItem;
 
 public class MainActivity extends Activity {
 
+	private static final int ITEM_COLORS_ID = Menu.FIRST;
+	private static final int ITEM_OPTIONS_ID = Menu.FIRST + 1;
+	private static final int ITEM_QUIT_ID = Menu.FIRST + 2;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -16,7 +20,13 @@ public class MainActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		//getMenuInflater().inflate(R.menu.main, menu);
+
+		//Adding Menu Items Programatically
+		menu.add(Menu.NONE, ITEM_COLORS_ID, Menu.NONE, R.string.colors);
+		menu.add(Menu.NONE, ITEM_OPTIONS_ID, Menu.NONE, R.string.options);
+		menu.add(Menu.NONE, ITEM_QUIT_ID, Menu.NONE, R.string.quit);
+
 		return true;
 	}
 
