@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
 		//Adding Menu Items Programatically
 		menu.add(Menu.NONE, ITEM_COLORS_ID, Menu.NONE, R.string.colors);
 		menu.add(Menu.NONE, ITEM_OPTIONS_ID, Menu.NONE, R.string.options);
-		menu.add(Menu.NONE, ITEM_QUIT_ID, Menu.NONE, R.string.quit);
+		menu.add(Menu.NONE, ITEM_QUIT_ID, Menu.NONE, R.string.quit); //Is Quit Menu, a good practice for Android app??
 
 		return true;
 	}
@@ -33,9 +33,15 @@ public class MainActivity extends Activity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
+		//if (id == R.id.action_settings) { return true; }
+		if (id == ITEM_COLORS_ID) {
+			//
+		} else if (id == ITEM_OPTIONS_ID ) {
+			//
+		} else if (id == ITEM_QUIT_ID){
+			finish();
 		}
-		return super.onOptionsItemSelected(item);
+		//		return super.onOptionsItemSelected(item);
+		return true;
 	}
 }
