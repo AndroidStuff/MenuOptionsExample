@@ -3,7 +3,7 @@
 
     <string name="app_name">MenuOptionsExample</string>
     <string name="hello_world">Example app to show case the Menu Options an Items in Android!</string>
-    <string name="colors">Background Color Preference</string>
+    <string name="colors">Favorite Colors</string>
     <string name="days_of_week">Days of Week</string>
     <string name="quit">Quit App</string>
     <string name="action_settings">Settings</string>
